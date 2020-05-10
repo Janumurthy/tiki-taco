@@ -34,7 +34,7 @@ section{
   max-width:100%;
   opacity:0;
   animation: fadeIn 2s forwards;
-  animation-delay: 3s;
+  animation-delay: 5s;
 }
 
 .loader-container{
@@ -63,10 +63,12 @@ img.symbol {
   position:absolute;
   top:35%;
   left:35%;
+  opacity:0;
 }
 
 img.symbol {
-  animation: rotateDown 3s ease-in-out;
+  animation: rotateDown 3s forwards;
+  animation-delay: 2s;
 }
 
 
@@ -103,5 +105,11 @@ footer p{
   100% { -webkit-transform: rotate(360deg);  top: 35%; opacity:1; }
 }
 
+@media screen and (min-width: 900px) {
+  img.symbol {
+    top: 45%;
+    left: 45%;
+  }
+}
 
 
